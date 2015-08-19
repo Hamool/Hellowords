@@ -17,6 +17,15 @@ namespace ConsoleApplication1
             for (short i = 0; i <= 10; i++)
             {
                 Console.WriteLine("Variable i={0}", i);
+                Console.ReadKey();
+            }
+            Console.Write("type thy number you want for loop to count");
+            string str = Console.ReadLine();
+            int jmax;
+            jmax = Int32.Parse(str);
+            for (short j = 0; j <= jmax; j++)
+            {
+                Console.WriteLine("j={0}", j);
             }
         }
     }
